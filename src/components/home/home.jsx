@@ -324,7 +324,7 @@ const Dashboard = () => {
       coRefId = coreferrerID;
     }
 
-    if (REGESTRATION_FESS === "150000000000000000000") {
+    if (REGESTRATION_FESS === "150000000") {
       let USDT_ = new web3.eth.Contract(USDT.ABI, USDT.address);
       let isApprove, reg_user;
       isApprove = await USDT_.methods
