@@ -83,10 +83,10 @@ const Dashboard = () => {
       setCoreReferrerID(coreusers.referrerID);
       setCoreReferredUsers(coreusers.referredUsers);
       setCoreIncome(
-        Number(await web3.utils.fromWei(coreusers.income, "ether")).toFixed(4)
+        Number((await web3.utils.fromWei(coreusers.income, "ether")) * (10 ** 12).toFixed(4)
       );
       setCoreTokenPrice(
-        Number(await web3.utils.fromWei(coreusers.tokenPrice, "ether")).toFixed(
+        Number((await web3.utils.fromWei(coreusers.tokenPrice, "ether")) * (10 ** 12).toFixed(
           6
         )
       );
