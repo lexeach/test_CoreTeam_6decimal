@@ -526,7 +526,7 @@ const Dashboard = () => {
         <div className="col-lg-3 col-md-6 col-sm-12 grid-margin">
           <div className="card">
             <div className="card-body">
-              <h6>Total RBCD</h6>
+              <h6>Total Super User RBCD</h6>
               <h4 className="mb-0">{total_rbcd ? total_rbcd : 0} LXC</h4>
             </div>
           </div>
@@ -598,7 +598,7 @@ const Dashboard = () => {
             <div className="col-lg-3 col-md-6 col-sm-12 grid-margin">
               <div className="card-sp">
                 <div className="card-body">
-                  <h6>Core Reg Time</h6>
+                  <h6>Core Reg Date</h6>
                   <h4 className="mb-0">{coreRegTime ? coreRegTime : 0} </h4>
                 </div>
               </div>
@@ -631,7 +631,7 @@ const Dashboard = () => {
         <div className="col-lg-3 col-md-6 col-sm-12 grid-margin">
           <div className="card">
             <div className="card-body">
-              <h6>Total RBCD </h6>
+              <h6>Total Users RBCD </h6>
               <h4 className="mb-0">{total_rbcdClaim ? total_rbcdClaim : 0}</h4>
             </div>
           </div>
@@ -652,7 +652,7 @@ const Dashboard = () => {
         <div className="col-lg-3 col-md-6 col-sm-12 grid-margin">
           <div className="card">
             <div className="card-body">
-              <h6>TakeClaim </h6>
+              <h6>Claim Taken </h6>
               <h4 className="mb-0">
                 {claimTakenClaim ? claimTakenClaim : 0} LXC
               </h4>
@@ -662,7 +662,7 @@ const Dashboard = () => {
         <div className="col-lg-3 col-md-6 col-sm-12 grid-margin">
           <div className="card">
             <div className="card-body">
-              <h6>Claim Taken </h6>
+              <h6>Claim Users RBCD</h6>
               <button onClick={takeClaimCon}>Take Calim</button>
             </div>
           </div>
@@ -678,7 +678,7 @@ const Dashboard = () => {
         <div className="col-lg-6 col-md-6 col-sm-6 grid-margin">
           <div className="card">
             <div className="card-body">
-              <h6>Take Claim</h6>
+              <h6>Claim Super User RBCD</h6>
               <button onClick={claimTokens}>Claim</button>
             </div>
           </div>
@@ -687,7 +687,7 @@ const Dashboard = () => {
           <div className="col-lg-6 col-md-6 col-sm-6 grid-margin">
             <div className="card">
               <div className="card-body">
-                <h6>Reg Core Member</h6>
+                <h6>Join Core Team</h6>
 
                 {loading && (
                   <div className="loader-overlay">
@@ -695,7 +695,7 @@ const Dashboard = () => {
                     Transaction is Approving{" "}
                   </div>
                 )}
-                <button onClick={regCoreMember}>Reg Core Member</button>
+                <button onClick={regCoreMember}>Registration</button>
               </div>
             </div>
           </div>
